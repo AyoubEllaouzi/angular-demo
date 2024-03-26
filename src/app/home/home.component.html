@@ -1,7 +1,11 @@
-<h1 style="color: red">welcome to home page</h1>
+<h1 style="color: red">welcome to {{name}}</h1>
 
 <ul>
-  <li><a routerLink="/navbar">Navbar</a></li>
-  <li><a routerLink="/home">Home</a></li>
-  <li><a routerLink="/footer">Footer</a></li>
+  <li><a routerLink="/products">Products</a></li>
 </ul>
+
+<div class="box-value">
+  {{itemCount}}
+</div>
+<app-app-goal-form (newItemEvent)="addItem($event)"></app-app-goal-form>
+<app-app-goal-list [x]="items" (deleteItemEvent)="deleteItem($event)" ></app-app-goal-list>

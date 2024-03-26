@@ -11,5 +11,7 @@ import {RouterLink} from "@angular/router";
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-
+  public name:string ="navbar page"
+constructor() {
+}
 }

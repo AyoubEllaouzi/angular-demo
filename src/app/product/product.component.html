@@ -1,0 +1,21 @@
+<h1>product page :</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+  <tr *ngFor="let product of products">
+    <td>{{product.id}}</td>
+    <td>{{product.title}}</td>
+    <td>{{product.price}}</td>
+  </tr>
+</table>
+
+<ul>
+  <li><a routerLink="/home">Go to Home</a></li>
+</ul>

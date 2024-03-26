@@ -11,6 +11,7 @@ import {RouterLink} from "@angular/router";
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
-
+  public name: string = "footer page";
+  constructor() {
+  }
 }
